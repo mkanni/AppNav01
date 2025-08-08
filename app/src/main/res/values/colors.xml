@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="statusbarColor">#af184b</color>
+    <color name="btnComitColor">#f5625e</color>
+    <color name="btnSaveColor">#2ac874</color>
+    <color name="btnDelColor">#f15980</color>
+    <color name="btnSearchColor">#54a7ee</color>
+    <color name="itemSelectColor">#ffffff</color>
+    <color name="itemUnSelectColor">#000000</color>
+    <color name="btnLabelColor">#f8984a</color>
+    <color name="selPopColor">#7990b0</color>
+    <color name="btnRetryColor">#cccccc</color>
+    <color name="yellowColor">#ffff00</color>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Franco ePos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Franco Group</string>
+    <string name="nav_header_subtitle">franco.co.uk</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="depart_prompt">Choose a department</string>
+    <string name="vat_prompt">Choose a vat</string>
+
+    <string-array name="depart_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>

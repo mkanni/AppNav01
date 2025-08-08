@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.franco.epos.appnav01.OPOFragment">
+
+   <!-- <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:alpha="0.3"
+        android:src="?android:attr/textSelectHandle" /> -->
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@android:color/transparent"
+       android:orientation="vertical">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="50dp"
+          android:orientation="horizontal"
+          android:clipToPadding="false"
+          android:overScrollMode="never" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/btn_commit"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="left"
+             android:layout_weight="1"
+             android:background="@color/btnComitColor"
+             android:gravity="center"
+             android:text="Commit"
+             android:textColor="@color/cardview_light_background" />
+
+         <Button
+             android:id="@+id/btn_save"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+
+             android:layout_weight="1"
+             android:background="@color/btnSearchColor"
+             android:gravity="center"
+             android:text="Save"
+             android:textColor="@color/cardview_light_background" />
+         <Button
+             android:id="@+id/btn_add"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+
+             android:layout_weight="1"
+             android:background="@color/btnSaveColor"
+             android:gravity="center"
+             android:text="Add"
+             android:textColor="@color/cardview_light_background" />
+
+         <Button
+             android:id="@+id/btn_cancel"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="right"
+             android:layout_weight="1"
+             android:background="@color/btnDelColor"
+             android:gravity="center"
+             android:text="Back"
+             android:textColor="@color/cardview_light_background" />
+
+<!--
+         <Button
+             android:id="@+id/btn_commit"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="left"
+             android:layout_weight="1"
+             android:background="@color/btnComitColor"
+             android:gravity="center"
+             android:text="Commit"
+             android:textColor="@color/cardview_light_background" />
+-->
+
+
+
+         <!--<Button
+             android:id="@+id/btn_add"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="right"
+             android:layout_weight="1"
+             android:background="@color/btnSaveColor"
+             android:gravity="center"
+             android:text="Add Item"
+             android:textColor="@color/cardview_light_background" />-->
+
+      </LinearLayout>
+
+   </RelativeLayout>
+
+
+   <RelativeLayout
+       android:id="@+id/loadingPanel"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center" >
+
+      <ProgressBar
+          android:id="@+id/loader_circle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:indeterminate="true" />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/noRecordPanel"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center" >
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="120dp"
+          android:layout_alignParentBottom="true"
+          android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/txt_msg_alt"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:gravity="center"
+             android:text="No record found"
+             android:textSize="15sp" />
+
+
+         <RelativeLayout
+
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center" >
+
+
+
+            <Button
+                android:id="@+id/btn_retry"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@color/btnRetryColor"
+                android:gravity="center"
+                android:text="Refresh"
+                android:textColor="@color/cardview_light_background" />
+         </RelativeLayout>
+
+
+      </LinearLayout>
+
+
+   </RelativeLayout>
+
+</FrameLayout>
+

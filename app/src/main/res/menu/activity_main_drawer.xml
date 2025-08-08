@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Settings" />-->
+        <!--
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+            -->
+
+
+        <item android:title="Settings" android:id="@+id/nav_settings">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_server"
+                    android:icon="@drawable/ic_server_image"
+                    android:title="Server Details" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_login_image"
+                    android:title="Login" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:title="Type"
+            android:id="@+id/nav_type">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_delivery"
+                        android:icon="@drawable/ic_delivery_image"
+                        android:title="Delivery" />
+                    <item
+                        android:id="@+id/nav_waste"
+                        android:icon="@drawable/ic_waste_image"
+                        android:title="Waste" />
+
+                    <item
+                        android:id="@+id/nav_stock_take"
+                        android:icon="@drawable/ic_stock_image"
+                        android:title="Stock take" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:title="Other"
+            android:id="@+id/nav_other">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_price_change"
+                        android:icon="@drawable/ic_pricechange_image"
+                        android:title="Price Change" />
+
+                    <item
+                        android:id="@+id/nav_quick_add"
+                        android:icon="@drawable/ic_quickadd_image"
+                        android:title="Quick Add" />
+
+                    <item
+                        android:id="@+id/nav_add_label"
+                        android:icon="@drawable/ic_quickadd_image"
+                        android:title="Add Label" />
+                    <item
+                        android:id="@+id/nav_pl_add"
+                        android:icon="@drawable/ic_quickadd_image"
+                        android:title="Puchase List" />
+
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:title="Purchase Order"
+            android:id="@+id/nav_po">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_open_op"
+                        android:icon="@drawable/ic_pricechange_image"
+                        android:title="Open PO" />
+
+                    <item
+                        android:id="@+id/nav_close_op"
+                        android:icon="@drawable/ic_quickadd_image"
+                        android:title="Close PO" />
+
+                </group>
+            </menu>
+        </item>
+
+
+
+    </group>
+    <!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+    -->
+
+</menu>
